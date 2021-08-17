@@ -133,8 +133,6 @@ Use the higher order function getAverageGoals to do the following:
 // get Finalscb
 function getAverageGoals(getFinalscb) {
 
-    //const finalsArray = getFinalscb(fifaData)
-
     const totalGoals = getFinalscb.reduce(function(acc, item){
         return acc + item['Away Team Goals'] + item['Home Team Goals'];
     }, 0)
